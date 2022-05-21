@@ -1,15 +1,22 @@
 <template>
   <div class="new-page">
     <h1>This is a new page</h1>
+    <my-component/>
+    <MyComponent/>
   </div>
 </template>
 
 <script>
 import axios from 'axios';
+import MyComponent from '@/components/MyComponent';
 
 const url = "https://jsonplaceholder.typicode.com/todos";
 
 export default {
+  components: {
+    MyComponent
+},
+
   data() {
     return {
       todos: [],
