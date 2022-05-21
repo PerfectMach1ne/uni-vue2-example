@@ -2,9 +2,10 @@
   <div id="app">
     <nav>
       <router-link to="/">Home</router-link> |
+      <router-link to="/new-page">New page</router-link> |
       <router-link to="/about">About</router-link>
     </nav>
-    <router-view/>
+    <router-view/> <!-- Show components based on URL address -->
   </div>
 </template>
 
